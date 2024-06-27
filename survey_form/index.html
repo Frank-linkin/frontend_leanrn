@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="https://freecatphotoapp.com/submit-cat-photo">
+        <label for="name" id="name-label">name：</label>
+        <input id="name" type="text" placeholder="please enter your name" required>
+        <label for="email" id="email-label">email:</label>
+        <!-- 6.是对应这么写吗，把submit按钮添加上去之后可以试试 -->
+        <input id="email" type="email" placeholder="please enter your email" required>
+        <label for="number" id="number-label">verify number:</label>
+        <!-- 8.怎么做来针对数字进行验证 -->
+        <input id="number" type="number" min="60" max="120" placeholder="please enter verify number">
+
+        <select id="dropdown" name="pets">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
+
+        <label><input type="radio" name="radio" value="option1">选项一</label>
+        <label><input type="radio" name="radio" value="option2">选项二</label>
+
+        <label><input type="checkbox" name="checkbox" value="option1">选择一</label>
+        <label><input type="checkbox" name="checkbox" value="option2">选择二</label>
+        <label><input type="checkbox" name="checkbox" value="option3">选择三</label>
+
+        <label>请输入一些信息<textarea></textarea></label>
+
+        <button id="submit">submit</button>
+    </form>
+</body>
+
+</html>
