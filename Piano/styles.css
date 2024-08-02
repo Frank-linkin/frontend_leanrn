@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+/* 上述CSS语句的含义是设置所有元素及其 ::before 和 ::after 伪元素的 box-sizing 属性，继承自其父元素的 box-sizing 属性。 */
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+#piano {
+    background-color: #00471b;
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.keys {
+    background-color: #040404;
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+
+.key {
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    float: left;
+    border-radius: 0 0 3px 3px;
+}
+
+/* 这段CSS的功能是在 .key.black--key 元素的后面添加一个深灰色的长方形块，该块的宽度为32像素，高度为100像素，并且相对于该元素的左边缘向左偏移18像素。这个伪元素可能用于在某个键盘布局或其他用户界面元素中模拟黑键或类似的视觉效果。 */
+.key.black--key::after {
+    background-color: #1d1e22;
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 23px;
+}
+
+@media (max-width: 768px) {
+    #piano {
+        width: 358px;
+    }
+
+    .keys {
+        width: 318px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+    }
+}
