@@ -1,0 +1,19 @@
+body {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.code_block {
+    display: block;
+    background-color: beige;
+}
+
+header {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+}
