@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product_Landing_Page</title>
+    <link rel="stylesheet" href="styles_draft.css" />
+</head>
+
+<body>
+    <nav>
+        <!-- 导航栏是这张搞吗？这种导航栏有两种搞法，一种使用grid，一种就是下面所示的，一分为二的两个div，左边div内的元素靠左对齐
+         右边div内的元素靠右对齐
+        实践：第二种不大行，使用Inline-block会有隐藏的换行 -->
+        <div class="left-nav">
+            <a href="https://www.aaa.com" target="_blank">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="点击跳转到www.aaa.com">
+            </a>
+        </div>
+        <div class="right-nav">
+            <a href="www.baidu.com">Features</a>
+            <a href="www.baidu.com">How It Works</a>
+            <a href="www.baidu.com">Pricing</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>andcrafted, home-made masterpieces</h1>
+        <form class="contact-submit-form" action="wwww.baidu.com">
+            <input type="text" id="enter-email" placeholder="please enter email" />
+            <!-- button怎样设置换行？ -->
+            <div id="button-wrapper"><button type="submit">GET START</button></div>
+        </form>
+
+        <!-- 这里我的想法是使用grid -->
+        <section class="feature-section">
+            <div class="logo">
+                <img src="down.png">
+            </div>
+            <div class="feature-discription">
+                <p><strong>Materials</strong></p>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
+                    your
+                    purchase.</p>
+            </div>
+            <div class="logo">
+                <img src="down.png">
+            </div>
+            <div class="feature-discription">
+                <p><strong>Fast Shipping</strong></p>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                    returns if you are not satisfied.</p>
+            </div>
+            <div class="logo">
+                <img src="down.png">
+            </div>
+            <div class="feature-discription">
+                <p><strong>Quality Assurance</strong></p>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                    the
+                    pitch of your instrument.</p>
+            </div>
+        </section>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=wd5tOppdpoU" title="YouTube视频播放器"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <section class="pricing">
+            <div class="price-box">
+                <div class="package-name">Tenor Trombone</div>
+                <div class="package-content">
+                    <p><strong>$600</strong></p>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <!-- 怎样设置点击按钮来跳转呢？ -->
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="price-box">
+                <div class="package-name">Bass Trombone</div>
+                <div class="package-content">
+                    <p><strong>$900</strong></p>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="price-box">
+                <div class="package-name">Valve Trombone</div>
+                <div class="package-content">
+                    <p><strong>$1200</strong></p>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 底部这个用不用Section呢？ -->
+        <section class="bottom-bar">
+            <a class="bottom-info" href="">Privacy</a>
+            <a class="bottom-info" href="">Terms</a>
+            <a class="bottom-info" href="">Contact</a>
+            <p>Copyright 2016, Original Trombones</p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+    background-color: #d4d7d9;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    height: 50px;
+}
+
+.left-nav {
+    text-align: left;
+    width: 50%;
+    height: 50px;
+    float: left;
+}
+
+.left-nav img {
+    width: 300px;
+    height: 100%;
+}
+
+.right-nav {
+    height: 100%;
+    width: 49%;
+    float: right;
+    text-align: right;
+}
+
+.right-nav a {
+    width: 300px;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 40px;
+}
+
+#button-wrapper {
+    margin: 10px;
+}
+
+#button-wrapper button {
+    background-color: #FFD700;
+}
+
+.feature-section {
+    display: grid;
+    grid-template-columns: 70px 600px;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    grid-column: 1/2;
+    border: 1px solid black;
+}
+
+.logo img {
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 2px auto;
+}
+
+.feature-discription {
+    grid-column: 2/3;
+    text-align: left;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+}
+
+.price-box {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+    border: 1px solid black
+}
+
+
+.package-name {
+    background-color: #c9d9d2;
+}
+
+.price-box ul {
+    list-style: none;
+    text-align: left;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.package-content button {
+    display: block;
+    background-color: #FFD700;
+    margin: 10px auto;
+    width: 80px;
+    height: 50px;
+}
+
+
+.bottom-bar {
+    text-align: right;
+    background-color: #e3ab57;
+}
+
+.bottom-info {
+    margin: 0 20px;
+    margin: 10px;
+    background-color: inherit;
+}
+
+.bottom-bar p {
+    background-color: inherit;
+    margin: 10px 30px;
+}
